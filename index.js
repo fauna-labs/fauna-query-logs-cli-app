@@ -182,7 +182,7 @@ async function getEmailPassword() {
     const p = await prompts({
       type: 'text',
       name: 'value',
-      message: "Enter the email address for your Preview account",
+      message: "Enter the email address for your account",
       validate: value => value.trim() === "" ? "email must be non-empty" : true
     });
     email = p.value.trim();
@@ -192,7 +192,7 @@ async function getEmailPassword() {
     const p = await prompts({
       type: 'text',
       name: 'value',
-      message: "Enter the password for your Preview account",
+      message: "Enter the password for your account",
       validate: value => value.trim() === "" ? "password must be non-empty" : true
     });
     password = p.value;
