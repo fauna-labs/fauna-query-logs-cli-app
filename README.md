@@ -1,10 +1,8 @@
 # What is this?
 
-A demo application for receiving query logs from your preview account.
+A demo application for receiving query logs .
 
-Presently it uses your username and password to create a synthetic dashboard session enabling the program to receive logs; however, when
-the product launches we will support the creation and usage of API tokens. This will enable programs to use API tokens, rather than synthetic
-dashboard sessions, to receive query logs.
+Presently it uses your username and password to create a synthetic dashboard session enabling the program to receive logs; however, we also support the creation and usage of API tokens. Learn more about how to use the API tokens to get query logs in the Fauna documentation page.
 
 # How do I use it?
 
@@ -13,4 +11,5 @@ dashboard sessions, to receive query logs.
 
 The demo application walks you through requesting Fauna query logs.
 Once query logs are received, you have the option to download them
-locally for analysis.
+locally for analysis, you can also write a script to import them in your favourite log processing tools such 
+as [Elastic Logstash](https://www.elastic.co/logstash/) or [Datadog](https://www.datadoghq.com/).
