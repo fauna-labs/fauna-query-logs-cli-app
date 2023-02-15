@@ -26,13 +26,13 @@ const logger = winston.createLogger({
 });
 
 const frontdoorClient = axios.create({
-  baseURL: "https://frontdoor.prev.faunadb.net",
+  baseURL: "https://frontdoor.faunadb.net",
   timeout: 10000,
 });
 
 async function getRegionGroupSecrets() {
   const authServiceClient = axios.create({
-    baseURL: "https://auth-console.fauna-preview.com",
+    baseURL: "https://auth-console.fauna.com",
     timeout: 20000,
   });
   while (true) {
